@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #555;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        background-color: #fff;
+        color: #333;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .gallery-item {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .gallery-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .copyright {
+        max-width: 1200px;
+        margin: auto;
+        padding: 1rem;
+        color: #fff;
+        font-size: 0.8rem;
+        text-align: left;
+      }
+
+      footer {
+        position: relative;
+        display: grid;
+        grid-template-columns: 400px repeat(3, 1fr);
+        gap: 2rem;
+      }
+
+      footer .column p {
+        color: #0a0101;
+        margin-bottom: 2rem;
+      }
+
+      footer {
+        background-color: #fff;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-content p {
+        margin: 0;
+        margin-right: 10px; /* jarak antara teks hak cipta dan logo */
+      }
+
+      .footer-content img {
+        width: 10px;
+        margin-left: 10px; /* sesuaikan ukuran logo sesuai kebutuhan */
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .order-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 400px;
+    }
+
+    .order-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .order-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .order-form input,
+    .order-form select,
+    .order-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .order-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .order-form button:hover {
+        background-color: #0056b3;
+    }
+    </style>
+    </head>
+  <body>
+  </head>
+  <body>
+    <header>
+      <h1>Form Order</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </nav>
+  </head>    
+  <body>
+    <form action="submit-order.php" method="POST" class="order-form">
+        <h2>Pemesanan Baju Batik Online</h2>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Alamat Pengiriman:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="size">Ukuran Baju:</label>
+        <select id="size" name="size" required>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+
+        <label for="quantity">Jumlah Baju:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label for="special-requests">Permintaan Khusus:</label>
+        <textarea id="special-requests" name="special-requests"></textarea>
+
+        <button type="submit">Pesan Sekarang</button><br><br>
+         <button type="submit">Batal</button>
+    </form>
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <img
+          src="/Htmlku/Project/gallery/logo.png"
+          alt="logo"
+          style="width: 10%"
+        />
+            <p>Copyright @ 2024 B12.2023.04773- Fitri Dewi Istiqomah Channel. All Right Reserved</p>
+        </div>
+  </body>
+</html>
